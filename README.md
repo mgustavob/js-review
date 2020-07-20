@@ -15,6 +15,23 @@ const myDog = {
         inUsa = ['New York', 'Missouri', 'Main', 'Vermont'],
         inCanada =['Toronto', 'Quebec']
     }
+
 }
+
+```
+
+## Ways to make a function
+```javascript
+function addNumbers(num1, num2) {
+    return num1 + num2;
+};
+
+const multiplyNumbers =function (num1, num2) {
+    return num1 * num2;
+};
+
+const subtractNumbers = (num1, num2) => {
+    return num1 - num2;
+};
 
 ```

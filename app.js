@@ -33,16 +33,42 @@ console.log(tesla);
 
 tesla.print();
 
-let name = "Sam";
-let age = 7;
-let samIsCool = true;
-const samFriends = ['Lulu', 'Mason', 'Gigi', 'Angel'];
-const myDog = {
-    breed: 'Yorkshire Terrier',
-    colors: ['Caramel', 'White', 'Tan'],
-    weight: '5lb',
-    placesVisited: {
-        inUsa = ['New York', 'Missouri', 'Main', 'Vermont'],
-        inCanada =['Toronto', 'Quebec']
-    }
+// let name = "Sam";
+// let age = 7;
+// let samIsCool = true;
+// const samFriends = ['Lulu', 'Mason', 'Gigi', 'Angel'];
+// const myDog = {
+//     breed: 'Yorkshire Terrier',
+//     colors: ['Caramel', 'White', 'Tan'],
+//     weight: '5lb',
+//     placesVisited: {
+//         inUsa = ['New York', 'Missouri', 'Main', 'Vermont'],
+//         inCanada =['Toronto', 'Quebec']
+//     },
+//     print: function() {
+//         console.log("I Sam,my dads favorite dog and I am a: " +this.breed);
+//     }
+// }
+
+// myDog.print();
+
+function printFriends(array) {
+    array.forEach(friend => {
+        console.log(friend);
+    })
 }
+
+printFriends(friends);
+printFriends(tesla.foundingMembers);
+
+function addNumbers(num1, num2) {
+    return num1 + num2;
+};
+
+const multiplyNumbers =function (num1, num2) {
+    return num1 * num2;
+};
+
+const subtractNumbers = (num1, num2) => {
+    return num1 - num2;
+};
