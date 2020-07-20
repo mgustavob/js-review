@@ -54,3 +54,29 @@ headerTwo.classList.add('subtitle', 'header-two');
 headerTwo.classList.remove('headerTwo');
 
 ```
+
+
+More DOM Manipulation
+``` javascript
+// iterate through my friends array
+for (let i = 0; i < friends.length; i++) {
+    // reference each friend
+    let eachFriend = friends[i];
+    console.log(eachFriend)
+    // create a li
+    const listItem = document.createElement('li');
+    // add textContent to li
+    listItem.textContent = eachFriend;
+    console.log(listItem);
+    //append that to a ul (unorder list)
+    list.appendChild(listItem);
+
+}
+console.log(list);
+
+
+haderThree.addEventListener('click', function() {
+    container.appendChild(list);
+ });
+
+```

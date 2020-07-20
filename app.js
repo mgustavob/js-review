@@ -88,3 +88,38 @@ container.appendChild(headerTwo);
 headerTwo.classList.add('subtitle', 'header-two');
 //headerTwo.setAttribute('class', 'header-two');
 headerTwo.classList.remove('headerTwo');
+
+headerTwo.addEventListener('click', function() {
+    headerTwo.textContent = 'Martin';
+});
+
+// make another element
+const haderThree = document.createElement('h2');
+haderThree.textContent = 'Friends';
+
+container.appendChild(haderThree);
+
+console.log(haderThree);
+
+const list = document.createElement('ul');
+
+// iterate through my friends array
+for (let i = 0; i < friends.length; i++) {
+    // reference each friend
+    let eachFriend = friends[i];
+    console.log(eachFriend)
+    // create a li
+    const listItem = document.createElement('li');
+    // add textContent to li
+    listItem.textContent = eachFriend;
+    console.log(listItem);
+    //append that to a ul (unorder list)
+    list.appendChild(listItem);
+
+}
+console.log(list);
+
+
+haderThree.addEventListener('click', function() {
+    container.appendChild(list);
+ });
