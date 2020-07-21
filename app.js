@@ -123,3 +123,57 @@ console.log(list);
 haderThree.addEventListener('click', function() {
     container.appendChild(list);
  });
+
+
+ // problem solving
+//  - [ ] Do I understand what the prompt is asking?
+//  - [ ] Am I able to break the problem down?
+//  - [ ] What is my strategy for solving the problem?
+//  - [ ] Do I understand what my code is doing?
+//  - [ ] Am I able to foresee any edge cases?
+//  - [ ] Am I able to track the order of the code that is being executed?
+//  - [ ] Am I able to track the values of the variables?
+//  - [ ] Am I able to walk through my code line by line with an example?
+//  - [ ] Do I have a working solution?
+
+
+// fizzBuzz
+// write a function that does the following
+    //takes ann array
+    //check each number in the array
+    // if number is divisable by 5 and 3  === FizzBuzz
+    // if number is divisible by 3 === Fizz
+    // if number is divisable by 5 === Buzz
+// return an array
+
+//example    [3, 5, 15, 20, 9, 7]
+// ['Fizz', 'Buzz', 'FizzBuzz', 'Buzz', 'Fizz', 7];
+
+function fizzBuzz (array1) {
+    let result = [];
+    for (let i = 0; i < array1.length; i++) {
+        let num = array1[i];
+        console.log(num);
+        if (num % 5 === 0 && num % 3 === 0) {
+            result.push('FizzBuzz');
+        } else if (num % 3 === 0) {
+            result.push('Fizz');
+        } else if (num % 5 === 0) {
+            result.push('Buzz');
+        } else {
+            result.push(num);
+        }
+
+
+    }
+    return result;
+
+};
+
+console.log(fizzBuzz([3, 5, 15, 20, 9, 7]));
+// setup an empty array
+// iterate through array that going to be pass in
+// check the remainder of each element
+// push the result of each element inside the result array
+// push that result array
+
