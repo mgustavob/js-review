@@ -1,6 +1,8 @@
 function isInside(array, ele) {
     if (array.includes(ele)) {
         return true;
+    } else {
+        return false;
     }
 
 }
@@ -115,14 +117,11 @@ function arraySubstring(words, str) {
     const result = [];
     for ( let i = 0; i < sentence.length; i++){
         if (i % 2 == 0){
-            arrayOne.push(sentence[i].toUpperCase());
+            result.push(sentence[i].toUpperCase());
         } else {
-            arrayOne.push(sentence[i]);
+            result.push(sentence[i]);
         }
     }
     return result.join('');
 }
 evenCaps("Tom got a small piece of pie")
-
-
-
